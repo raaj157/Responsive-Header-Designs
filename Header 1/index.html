@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar with Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">Wisecrest</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li>
+            <a href="#services">Services</a>
+            <div class="dropdown">
+              <a href="#web">Web Development</a>
+              <a href="#ai">AI Art</a>
+              <a href="#ml">Machine Learning</a>
+            </div>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+        </div>
+        <a href="#get-started" class="btn">Get Started</a>
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Toggle mobile menu
+      function toggleMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
