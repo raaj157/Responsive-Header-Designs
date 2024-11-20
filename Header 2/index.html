@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h2>Wisecrest</h2>
+        <ul class="nav-links">
+          <li>
+            <a href="#"><i class="bx bx-home-heart"></i> Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-detail"></i> About us</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bxs-phone-call"></i> Contact us</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-help-circle"></i> Help</a>
+          </li>
+        </ul>
+        <button class="btn">SignIn</button>
+        <div class="hamburger"><i class="bx bx-menu"></i></div>
+      </nav>
+    </div>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
