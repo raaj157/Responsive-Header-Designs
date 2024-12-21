@@ -32,6 +32,7 @@
   font-size: 1.8em;
   font-weight: bold;
   color: #ffeb3b;
+  cursor: pointer;
 }
 
 /* Navbar links */
@@ -42,7 +43,7 @@
 }
 
 .navbar ul li {
-  margin: 0 1rem;
+  margin: 0 1.5rem;
   position: relative;
 }
 
